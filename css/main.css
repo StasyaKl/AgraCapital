@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "MontserratItalic";
+    src: url("../fonts/Montserrat-italic.ttf");
+}
+@font-face {
+    font-family: "MontserratAlternates";
+    src: url("../fonts/MontserratAlternates-Regular.ttf");
+}
+@font-face {
+    font-family: "RubikRegular";
+    src: url("../fonts/Rubik-Regular.ttf");
+}
+@font-face {
+    font-family: "RubikBold";
+    src: url("../fonts/Rubik-Bold.ttf");
+}
+body {
+    margin: 0;
+    background: black;
+}
+#header-container {
+    max-width: 1098px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 54px;
+}
+.logo {
+    width: 186px;
+    height: 66px;
+}
+.logo img {
+    width: 100%;
+}
+#link {
+    display: flex;
+    align-items: center;
+}
+#link .link-item {
+    margin-right: 20px;
+}
+#link .link-item:last-child {
+    margin-right: 0;
+}
+#link .link-item a {
+    font-family: "RubikRegular", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: grey;
+    padding-top: 10px;
+    border-top: 1px solid transparent;
+}
+#link .link-item a:hover {
+    color: #FFED01;
+    border-top: 1px solid #FFED01;
+}
+#header-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-active {
+    margin-right: 10px;
+}
+.header-active:last-child {
+    margin-right: 0;
+}
+.yellow {
+    width: 139px;
+    height: 49px;
+    border-radius: 10px;
+    background-color: #EDDD0E;
+    outline: none;
+    border-color: transparent;
+}
+.header-active .border-yellow {
+    width: 139px;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid #EDDD0E;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+#step-container {
+    max-width: 1098px;
+    margin: 90px auto 0 auto;
+    position: relative;
+}
+#step-title {
+    display: flex;
+    align-items: center;
+}
+#step-title #step-title-img {
+    width: 74px;
+    height: 61px;
+    background-color: #FFED01;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+#step-title #step-title-text {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 65px;
+    color: #FFFFFF;
+}
+#step-text {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 34px;
+    color: #FFFFFF;
+    max-width: 685px;
+    text-transform: uppercase;
+    margin: 23px 0 35px 0;
+}
+#step-yellow {
+    font-family: 'MontserratItalic', sans-serif;
+    font-weight: 600;
+    font-size: 29px;
+    color: #FFD915;
+    width: 535px;
+    margin-bottom: 25px;
+}
+#step-yellow span {
+    font-size: 49px;
+}
+.step-block-text {
+    font-family: "RubikRegular", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 610px;
+    margin-bottom: 30px;
+}
+#step-action .yellow {
+    width: 365px;
+    height: 87px;
+    background: #FFED01;
+    padding: 27px 44px;
+    box-sizing: border-box;
+    font-family: 'MontserratAlternates', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
+#step-image {
+    position: absolute;
+    top: -30px;
+    right: -355px;
+}
+#step-arrow {
+    margin-top: 61px;
+    margin-left: 15px;
+}
+#agra-container {
+    max-width: 1098px;
+    margin: 0 auto;
+}
+.question {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+}
+.question-title {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 31px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 25px;
+}
+.question-title span {
+    font-size: 40px;
+}
+#agra-block {
+    background: #232427;
+    border-radius: 10px;
+    max-width: 1098px;
+    padding: 38px 17px;
+    margin: 40px 5px 0 5px;
+}
+#agra-block-title {
+    font-family: 'MontserratAlternates', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+#agra-block-text {
+    font-family: 'MontserratAlternates', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+#agra-image {
+    width: 730px;
+    height: 630px;
+    margin: 0 auto;
+    position: relative;
+}
+#agra-image img {
+    width: 100%;
+}
+#agra-image-text {
+    position: absolute;
+    background: #232427;
+    border-radius: 10px;
+    width: 336px;
+    padding: 36px 2px;
+    left: -174px;
+    bottom: -32px;
+}
+#agra-image-text-cost-title {
+    font-family: 'RubikRegular', sans-serif;
+    font-weight: 500;
+    font-size: 78.2689px;
+    text-align: center;
+    color: #FFED01;
+}
+#agra-image-text-cost-title span {
+    font-size: 52.2955px;
+}
+#agra-image-text-cost-text {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 16.5087px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 246.66px;
+    margin: 0 auto;
+    line-height: 29px;
+}
+.agra-text {
+    font-family: 'RubikRegular', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    width: 1067px;
+}
+#iproducts-container, #result-container, #difference-container {
+    max-width: 1098px;
+    margin: 0 auto;
+}
+#iproducts-items {
+    display: flex;
+}
+.iproducts-item {
+    margin-right: 30px;
+    margin-top: 89px;
+    position: relative;
+}
+.iproducts-item:last-child {
+    margin-right: 0;
+}
+.iproducts-item-image::before {
+    content: '1';
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background: #FFED01;
+    position: absolute;
+    top: -22px;
+    left: 30px;
+}
+.iproducts-item-text {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 345px;
+    margin-top: 90px;
+}
+.iproducts-item:first-child .iproducts-item-text {
+    width: 305px;
+}
+#result-text {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 48px;
+    margin-left: 48px;
+}
+.ct-perfect-fourth {
+    max-height: 382px;
+    margin-top: 40px;
+}
+.ct-series-a .ct-area, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-slice-pie {
+    fill: #FFED01;
+}
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+    stroke: #FFED01;
+}
+.ct-label.ct-vertical.ct-start {
+    font-family: 'RubikRegular', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(158, 158, 158, 0.55);
+}
+.ct-label.ct-horizontal.ct-end {
+    font-family: 'RubikRegular', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #404144;
+}
+#difference-items {
+    display: flex;
+}
+.difference-item {
+    max-width: 280px;
+    border-radius: 10px;
+}
+.difference-item.active {
+    background: #FFED01;
+}
+.difference-item-img {
+    width: 78px;
+    height: 78px;
+    margin-bottom: 3px;
+}
+.difference-item-title {
+    font-family: 'RubikBold', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #121317;
+    max-width: 172px;
+    line-height: 35px;
+    height: 70px;
+}
+.difference-item-text {
+    font-family: 'RubikRegular', sans-serif;
+    font-size: 15px;
+    color: #121317;
+    width: 250px;
+    line-height: 26px;
+    margin-top: 15px;
+}
