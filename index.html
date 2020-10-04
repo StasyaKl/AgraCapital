@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>AgraCapital</title>
+    <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -15,15 +17,15 @@
                 <img src="images/Logotype.png" alt="">
             </a>
         </div>
-        <div id="link">
+        <div class="link">
             <div class="link-item">
-                <a href="#">Что это?</a>
+                <a href="#agra">Что это?</a>
             </div>
             <div class="link-item">
-                <a href="#">Наши продукты</a>
+                <a href="#iproducts">Наши продукты</a>
             </div>
             <div class="link-item">
-                <a href="#">Отличие от других</a>
+                <a href="#difference">Отличие от других</a>
             </div>
             <div class="link-item">
                 <a href="#">FAQ</a>
@@ -64,20 +66,20 @@
             навстречу к своему финансовому
             благополучию
         </div>
-        <div id="step-yellow">
+        <div id="step-yellow" class="properties-block wow animate__bounceIn" data-wow-delay="1s">
             Зарабатывайте до <span>15%</span> прибыли в месяц
         </div>
         <div id="step-block-text">
-            <div class="step-block-text">
+            <div class="step-block-text properties-block wow animate__fadeInUp" data-wow-delay="2s">
                 Мы предлагаем эффективные и прибыльные инвестиции, которые основаны на лучших инструментах, способных
                 стабильно генерировать прибыль.
             </div>
-            <div class="step-block-text">
+            <div class="step-block-text properties-block wow animate__fadeInUp" data-wow-delay="3s">
                 В их числе неоспоримый опыт профессиональных трейдеров, роботы-трейдеры, использующие искусственный
                 интеллект и работающий бизнес по обмену криптовалюты.
             </div>
         </div>
-        <div id="step-action">
+        <div id="step-action" class="properties-block wow animate__fadeInUp" data-wow-delay="4s">
             <button class="yellow">Зарегистрироваться</button>
         </div>
         <div id="step-image">
@@ -99,7 +101,7 @@
 
 <div id="agra">
     <div id="agra-container">
-        <div class="question">
+        <div class="question properties-block wow animate__fadeIn">
             <div class="question-image">
                 <img src="images/dollar.png" alt="">
             </div>
@@ -140,7 +142,7 @@
 
 <div id="iproducts">
     <div id="iproducts-container">
-        <div class="question">
+        <div class="question properties-block wow animate__fadeIn">
             <div class="question-image">
                 <img src="images/dollar.png" alt="">
             </div>
@@ -153,6 +155,7 @@
             <div class="iproducts-item">
                 <div class="iproducts-item-image">
                     <img src="images/grafic1.png" alt="">
+                    <div class="iproducts-item-number">1</div>
                 </div>
                 <div class="iproducts-item-text">
                     Уникальный робот-трейдер на валютном рынке.
@@ -161,6 +164,7 @@
             <div class="iproducts-item">
                 <div class="iproducts-item-image">
                     <img src="images/grafic2.png" alt="">
+                    <div class="iproducts-item-number">2</div>
                 </div>
                 <div class="iproducts-item-text">
                     Профессиональная команда трейдеров на криптовалютном рынке.
@@ -169,6 +173,7 @@
             <div class="iproducts-item">
                 <div class="iproducts-item-image">
                     <img src="images/grafic3.png" alt="">
+                    <div class="iproducts-item-number">3</div>
                 </div>
                 <div class="iproducts-item-text">
                     Успешный бизнес по обмену криптовалюты (обменник), приносящий высокую прибыль абсолютно без рисков.
@@ -180,7 +185,7 @@
 
 <div id="result">
     <div id="result-container">
-        <div class="question">
+        <div class="question properties-block wow animate__fadeIn">
             <div class="question-image">
                 <img src="images/dollar.png" alt="">
             </div>
@@ -198,7 +203,7 @@
 
 <div id="difference">
     <div id="difference-container">
-        <div class="question">
+        <div class="question properties-block wow animate__fadeIn">
             <div class="question-image">
                 <img src="images/dollar.png" alt="">
             </div>
@@ -210,25 +215,20 @@
             <div class="difference-item active">
                 <div class="difference-item-img">
                     <svg width="66" height="67" viewBox="0 0 66 67" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
+                        <g>
                             <path d="M60.8625 41.4591C57.0641 41.69 52.0676 45.4893 47.2495 47.6716C41.3434 50.3429 32.1497 48.1924 32.1483 48.1924C33.5653 47.5306 39.3294 46.1572 40.4907 45.645C46.6605 42.9331 46.1368 37.2735 43.1983 37.321C39.317 37.3833 37.0376 38.3395 29.291 39.3953C23.4195 40.1941 16.4753 39.902 13.1445 41.1738C8.44277 42.97 0.870117 55.0497 0.870117 55.0497L12.5801 66.3966C12.5801 66.3966 19.8284 59.2576 23.3552 59.2576C31.3913 59.2576 31.7162 59.15 39.1782 58.7473C42.352 58.5741 43.0147 58.4472 44.8302 57.8322C54.503 54.5616 64.889 45.8529 65.0804 44.8064C65.5234 42.3801 62.8689 41.3343 60.8625 41.4591Z"
-                                  fill="#171717"/>
+                            />
                             <path d="M40.1812 18.8404C39.8918 18.8404 39.6562 19.0735 39.6562 19.3634V32.6986C39.6562 32.9883 39.8917 33.2207 40.1812 33.2207H44.9599C45.2496 33.2207 45.4856 32.9883 45.4856 32.6986V19.3634C45.4856 19.0733 45.2498 18.8404 44.9599 18.8404H40.1812Z"
-                                  fill="#171717"/>
+                            />
                             <path d="M48.9827 12.7785V32.6987C48.9827 32.9885 49.2175 33.2209 49.5076 33.2209H54.2876C54.5775 33.2209 54.8122 32.9885 54.8122 32.6987V12.7785C54.8122 12.639 54.7564 12.5044 54.6583 12.406C54.5597 12.3077 54.4267 12.2528 54.2877 12.2528L49.5078 12.253C49.2175 12.253 48.9827 12.4886 48.9827 12.7785Z"
-                                  fill="#171717"/>
+                            />
                             <path d="M30.8536 14.1754C30.5635 14.1754 30.329 14.4108 30.329 14.7013V32.6987C30.329 32.9884 30.5635 33.2208 30.8536 33.2208H35.6339C35.9238 33.2208 36.1581 32.9884 36.1581 32.6987V14.7013C36.1581 14.411 35.9238 14.1754 35.6339 14.1754H30.8536Z"
-                                  fill="#171717"/>
+                            />
                             <path d="M21.5267 19.7739C21.237 19.7739 21.0028 20.0061 21.0028 20.296V32.6988C21.0028 32.9885 21.237 33.2209 21.5267 33.2209H26.3068C26.5965 33.2209 26.8311 32.9885 26.8311 32.6988V20.296C26.8311 20.0061 26.5965 19.7739 26.3068 19.7739H21.5267Z"
-                                  fill="#171717"/>
+                            />
                             <path d="M22.6878 18.0099C22.826 18.1724 23.0238 18.2574 23.2223 18.2574C23.3821 18.2574 23.5434 18.203 23.6736 18.0897L33.2262 10.0145L41.6057 16.4242C41.8992 16.6507 42.3159 16.6075 42.5587 16.3267L50.2988 7.39493L51.383 8.33356C51.5717 8.49564 51.8345 8.54603 52.0698 8.46642C52.3055 8.38394 52.4807 8.18295 52.5286 7.93749L53.8202 1.22959C53.867 0.984307 53.7801 0.731496 53.5922 0.566901C53.4034 0.404636 53.1402 0.354253 52.9053 0.433861L46.4495 2.66881C46.2123 2.75183 46.0373 2.95282 45.9905 3.19828C45.9431 3.44374 46.0301 3.69512 46.2191 3.85774L47.3024 4.79941L41.574 11.4114L33.5486 5.27097C33.2877 5.07159 32.9225 5.07983 32.672 5.29445L21.1152 15.0624C20.9726 15.1842 20.8839 15.3533 20.8688 15.5392C20.8539 15.7248 20.9133 15.9089 21.0322 16.0511L22.6878 18.0099Z"
-                                  fill="#171717"/>
+                            />
                         </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="66" height="66" fill="white" transform="translate(0 0.396729)"/>
-                            </clipPath>
-                        </defs>
                     </svg>
                 </div>
                 <div class="difference-item-title">
@@ -246,15 +246,10 @@
             <div class="difference-item">
                 <div class="difference-item-img">
                     <svg width="78" height="79" viewBox="0 0 78 79" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
+                        <g>
                             <path d="M77.4177 37.8725C76.7215 37.0959 59.9751 18.8303 39.0001 18.8303C18.0251 18.8303 1.27885 37.0959 0.582486 37.8725C-0.194162 38.7406 -0.194162 40.0529 0.582486 40.9209C1.27885 41.6976 18.0254 59.9631 39.0001 59.9631C59.9748 59.9631 76.7213 41.6976 77.4177 40.9209C78.1942 40.0529 78.1942 38.7406 77.4177 37.8725ZM39.0001 55.3928C30.1807 55.3928 23.004 48.2161 23.004 39.3967C23.004 30.5774 30.1807 23.4006 39.0001 23.4006C47.8194 23.4006 54.9962 30.5774 54.9962 39.3967C54.9962 48.2161 47.8194 55.3928 39.0001 55.3928Z"/>
                             <path d="M41.2852 34.8264C41.2852 32.5275 42.4264 30.5052 44.1625 29.2613C42.6046 28.4638 40.867 27.9709 39 27.9709C32.7001 27.9709 27.5742 33.0969 27.5742 39.3967C27.5742 45.6966 32.7001 50.8225 39 50.8225C44.6404 50.8225 49.3088 46.704 50.2311 41.3227C45.6294 42.8042 41.2852 39.3239 41.2852 34.8264Z"/>
                         </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="78" height="78" fill="white" transform="translate(0 0.396729)"/>
-                            </clipPath>
-                        </defs>
                     </svg>
                 </div>
                 <div class="difference-item-title">
@@ -268,30 +263,20 @@
             </div>
             <div class="difference-item">
                 <div class="difference-item-img">
-                    <svg width="53" height="54" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)" filter="url(#filter0_d)">
-                            <path d="M34.2761 9.65408L4.08813 39.842L9.64291 45.3967L39.8309 15.2089L34.2761 9.65408ZM29.5404 18.1324L34.2761 13.3966L36.0883 15.2089L31.3526 19.9446L29.5404 18.1324Z" fill="#FFED01"/>
-                            <path d="M43.4227 4.01446L40.113 7.32413L41.9843 9.19539L45.294 5.88572L43.4227 4.01446Z" fill="#FFED01"/>
-                            <path d="M41.5539 22.6202L39.6826 24.4914L43.0547 27.8635L44.9259 25.9922L41.5539 22.6202Z" fill="#FFED01"/>
-                            <path d="M23.3176 4.38268L21.4463 6.25394L24.7974 9.60505L26.6687 7.73379L23.3176 4.38268Z" fill="#FFED01"/>
-                            <path d="M48.8889 14.7992H44.1174V17.4457H48.8889H48.9119V14.7992H48.8889Z" fill="#FFED01"/>
-                            <path d="M31.8628 0.398311V5.1698H34.5093V0.398311V0.396729L31.8628 0.398311Z" fill="#FFED01"/>
+                    <svg width="53" height="54" viewBox="0 0 53 54" xmlns="http://www.w3.org/2000/svg">
+                        <g >
+                            <path d="M34.2761 9.65408L4.08813 39.842L9.64291 45.3967L39.8309 15.2089L34.2761 9.65408ZM29.5404 18.1324L34.2761 13.3966L36.0883 15.2089L31.3526 19.9446L29.5404 18.1324Z"
+                            />
+                            <path d="M43.4227 4.01446L40.113 7.32413L41.9843 9.19539L45.294 5.88572L43.4227 4.01446Z"
+                            />
+                            <path d="M41.5539 22.6202L39.6826 24.4914L43.0547 27.8635L44.9259 25.9922L41.5539 22.6202Z"
+                            />
+                            <path d="M23.3176 4.38268L21.4463 6.25394L24.7974 9.60505L26.6687 7.73379L23.3176 4.38268Z"
+                            />
+                            <path d="M48.8889 14.7992H44.1174V17.4457H48.8889H48.9119V14.7992H48.8889Z"/>
+                            <path d="M31.8628 0.398311V5.1698H34.5093V0.398311V0.396729L31.8628 0.398311Z"
+                            />
                         </g>
-                        <defs>
-                            <filter id="filter0_d" x="0" y="0.396729" width="53" height="53"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                                <feOffset dy="4"/>
-                                <feGaussianBlur stdDeviation="2"/>
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                            </filter>
-                            <clipPath id="clip0">
-                                <rect width="45" height="45" fill="white" transform="translate(4 0.396729)"/>
-                            </clipPath>
-                        </defs>
                     </svg>
                 </div>
                 <div class="difference-item-title">
@@ -304,17 +289,15 @@
             </div>
             <div class="difference-item">
                 <div class="difference-item-img">
-                    <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                            <path d="M37.3688 39.753C33.3937 43.278 28.2 45.3967 22.5 45.3967C10.0875 45.3967 0 35.3092 0 22.8967C0 10.953 9.3375 1.16547 21.0938 0.452972V9.86547C14.5125 10.5592 9.375 16.1467 9.375 22.8967C9.375 30.1342 15.2625 36.0217 22.5 36.0217C25.6125 36.0217 28.4812 34.9342 30.7312 33.1155L37.3688 39.753Z" fill="#FFED01"/>
-                            <path d="M44.9437 24.303C44.6437 29.4405 42.6 34.128 39.3562 37.7655L32.7188 31.128C34.2562 29.2342 35.2687 26.8717 35.5312 24.303H44.9437Z" fill="#FFED01"/>
-                            <path d="M44.9437 21.4905H35.5312C34.8937 15.378 30.0187 10.503 23.9062 9.86547V0.452972C35.1937 1.12797 44.2687 10.203 44.9437 21.4905Z" fill="#FFED01"/>
+                    <svg width="45" height="46" viewBox="0 0 45 46" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M37.3688 39.753C33.3937 43.278 28.2 45.3967 22.5 45.3967C10.0875 45.3967 0 35.3092 0 22.8967C0 10.953 9.3375 1.16547 21.0938 0.452972V9.86547C14.5125 10.5592 9.375 16.1467 9.375 22.8967C9.375 30.1342 15.2625 36.0217 22.5 36.0217C25.6125 36.0217 28.4812 34.9342 30.7312 33.1155L37.3688 39.753Z"
+                            />
+                            <path d="M44.9437 24.303C44.6437 29.4405 42.6 34.128 39.3562 37.7655L32.7188 31.128C34.2562 29.2342 35.2687 26.8717 35.5312 24.303H44.9437Z"
+                            />
+                            <path d="M44.9437 21.4905H35.5312C34.8937 15.378 30.0187 10.503 23.9062 9.86547V0.452972C35.1937 1.12797 44.2687 10.203 44.9437 21.4905Z"
+                            />
                         </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="45" height="45" fill="white" transform="translate(0 0.396729)"/>
-                            </clipPath>
-                        </defs>
                     </svg>
                 </div>
                 <div class="difference-item-title">
@@ -329,8 +312,307 @@
     </div>
 </div>
 
+<div id="multiplication">
+    <div id="multiplication-container">
+        <div class="question properties-block wow animate__fadeIn">
+            <div class="question-image">
+                <img src="images/dollar.png" alt="">
+            </div>
+            <div class="question-title">
+                Приумножать свой <br>
+                <span>капитал стало легко</span>
+            </div>
+        </div>
+        <div class="multiplication-text">
+            Не нужно усложнять себе жизнь и ввязываться в сомнительные предложения от сомнительных проектов.
+        </div>
+        <div class="multiplication-text">
+            Мы предельно открыто и прозрачно доказываем работоспособность и эффективность инструментов, генерирующих нам
+            прибыль. Расскажем вам, как работает инвестирование и какие выгоды получают наши клиенты.
+        </div>
+        <div id="multiplication-title">
+            Торговля c помощью трейдеров и роботов может происходить на личных счетах инвесторов при депозитах от 50
+            000$.
+        </div>
+        <div id="multiplication-items">
+            <div class="multiplication-item">
+                <div class="multiplication-item-image">
+                    <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M67.0001 69.6666H59.0001C57.8961 69.6666 57.0001 68.7706 57.0001 67.6666V63.7839C57.0001 62.6986 56.3548 61.8053 55.8134 61.2479C53.5521 58.9146 52.5868 55.7306 53.1654 52.5066C53.8854 48.4986 57.1868 45.2053 61.1921 44.4959C64.1468 43.9626 67.1521 44.7653 69.4241 46.6719C71.6988 48.5786 73.0001 51.3706 73.0001 54.3359C73.0001 57.0079 71.9468 59.5173 70.0348 61.4026C69.5628 61.8693 69.0001 62.6213 69.0001 63.5573V67.6693C69.0001 68.7706 68.1041 69.6666 67.0001 69.6666Z"
+                                  fill="#FFED01"/>
+                            <path d="M77 79H49C47.896 79 47 78.104 47 77V72.0214C47 69.672 48.7573 67.6827 51.088 67.392L59.4187 66.3494L66.3333 66.3334L74.912 67.3894C77.2427 67.68 79 69.672 79 72.0214V77C79 78.104 78.104 79 77 79Z"
+                                  fill="#FFED01"/>
+                            <path d="M47.6667 20.3333H44.7334C43.8534 17.2667 41.0267 15 37.6667 15C34.3067 15 31.4801 17.2667 30.6001 20.3333H27.6667C26.5734 20.3333 25.6667 21.24 25.6667 22.3333V26.3333C25.6667 28.8933 27.7734 31 30.3334 31H45.0001C47.5601 31 49.6667 28.8933 49.6667 26.3333V22.3333C49.6667 21.24 48.7601 20.3333 47.6667 20.3333Z"
+                                  fill="#FFED01"/>
+                            <path d="M53 23H52.3333V26.3333C52.3333 30.3867 49.0533 33.6667 45 33.6667H30.3333C26.28 33.6667 23 30.3867 23 26.3333V23H22.3333C18.28 23 15 26.28 15 30.3333V63.6667C15 67.72 18.28 71 22.3333 71H41.72C42.1733 66.6267 45.48 63 49.8533 62.2C49.48 61.6133 49.16 60.9733 48.8933 60.3333H25C23.9067 60.3333 23 59.4267 23 58.3333C23 57.24 23.9067 56.3333 25 56.3333H47.8C47.5867 54.8133 47.6133 53.24 47.88 51.6667H25C23.9067 51.6667 23 50.76 23 49.6667C23 48.5733 23.9067 47.6667 25 47.6667H49.2133C51.32 43.3467 55.4533 40.0933 60.2533 39.24H60.3333V30.3333C60.3333 26.28 57.0533 23 53 23ZM50.3333 43H25C23.9067 43 23 42.0933 23 41C23 39.9067 23.9067 39 25 39H50.3333C51.4267 39 52.3333 39.9067 52.3333 41C52.3333 42.0933 51.4267 43 50.3333 43Z"
+                                  fill="#FFED01"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="rectangle"></div>
+                <div class="multiplication-item-block properties-block wow animate__fadeInUp">
+                    <div class="multiplication-item-title">
+                        <div class="multiplication-item-title-number">
+                            1
+                        </div>
+                        <div class="multiplication-item-title-text">
+                            Регистрация
+                        </div>
+                    </div>
+                    <div class="multiplication-item-text">
+                        Пользователи регистрируются на платформе ARGA Capital.
+                    </div>
+                    <div class="multiplication-item-text">
+                        За пару минут вы создаете для себя аккаунт и сможете контролировать свои финансы в личном кабинете.
+                        Останется только пополнить вклад и наблюдать за ростом вашей прибыли.
+                    </div>
+                </div>
+            </div>
+            <div class="multiplication-item">
+                <div class="multiplication-item-image">
+                    <svg width="91" height="90" viewBox="0 0 91 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M66.8417 45.5362H76V34.8318H18.6717C17.3661 34.8318 16.1573 34.4539 15.1035 33.8394V65.1611C15.1035 70.0795 19.1054 74.0815 24.0239 74.0815H76V63.377H66.8417C61.9233 63.377 57.9214 59.3751 57.9214 54.4566C57.9214 49.5382 61.9233 45.5362 66.8417 45.5362ZM45.4328 52.6725C48.3842 52.6725 50.7851 55.0734 50.7851 58.0248C50.7851 60.3476 49.289 62.3094 47.2169 63.0484V66.9452H43.6487V63.0484C41.5766 62.3094 40.0806 60.3476 40.0806 58.0248H43.6487C43.6487 59.0091 44.4485 59.8089 45.4328 59.8089C46.4172 59.8089 47.2169 59.0091 47.2169 58.0248C47.2169 57.0404 46.4172 56.2407 45.4328 56.2407C42.4815 56.2407 40.0806 53.8398 40.0806 50.8885C40.0806 48.5656 41.5766 46.6038 43.6487 45.8649V41.9681H47.2169V45.8649C49.289 46.6038 50.7851 48.5656 50.7851 50.8885H47.2169C47.2169 49.9041 46.4172 49.1044 45.4328 49.1044C44.4485 49.1044 43.6487 49.9041 43.6487 50.8885C43.6487 51.8728 44.4485 52.6725 45.4328 52.6725Z"
+                                  fill="#FFED01"/>
+                            <path d="M66.8417 49.104C63.8904 49.104 61.4895 51.5049 61.4895 54.4562C61.4895 57.4076 63.8904 59.8085 66.8417 59.8085H76V49.104H66.8417ZM68.6258 56.2403H65.0577V52.6722H68.6258V56.2403Z"
+                                  fill="#FFED01"/>
+                            <path d="M38.2964 15.9194L26.0225 31.2634H50.5704L38.2964 15.9194Z" fill="#FFED01"/>
+                            <path d="M52.5692 15.9194L47.718 21.9845L55.1416 31.2634H64.8431L52.5692 15.9194Z"
+                                  fill="#FFED01"/>
+                            <path d="M63.7046 24.127L69.414 31.2633H72.1938V24.127H63.7046Z" fill="#FFED01"/>
+                            <path d="M18.6717 24.127C16.701 24.127 15.1035 25.7244 15.1035 27.6951C15.1035 29.6657 16.701 31.2633 18.6717 31.2633H21.4515L27.1609 24.127H18.6717Z"
+                                  fill="#FFED01"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="rectangle"></div>
+                <div class="multiplication-item-block properties-block wow animate__fadeInUp" data-wow-delay="1s">
+                    <div class="multiplication-item-title">
+                        <div class="multiplication-item-title-number">
+                            2
+                        </div>
+                        <div class="multiplication-item-title-text">
+                            Пополнение
+                        </div>
+                    </div>
+                    <div class="multiplication-item-text">
+                        Пополняете личный депозит на платформе. Пользовательские средства будут автоматически распределены
+                        между инвестиционными продуктами, которые уже через 24 часа начнут работать на вас и приносить
+                        прибыль.
+                    </div>
+                </div>
+            </div>
+            <div class="multiplication-item">
+                <div class="multiplication-item-image">
+                    <svg width="86" height="84" viewBox="0 0 86 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M46.6714 45.2437C46.1969 45.2437 45.8105 45.6259 45.8105 46.1013V67.9678C45.8105 68.4429 46.1966 68.824 46.6714 68.824H54.5073C54.9824 68.824 55.3693 68.4429 55.3693 67.9678V46.1013C55.3693 45.6256 54.9827 45.2437 54.5073 45.2437H46.6714Z"
+                                  fill="#FFED01"/>
+                            <path d="M61.1038 35.3031V67.9677C61.1038 68.4428 61.4889 68.8238 61.9646 68.8238H69.8026C70.278 68.8238 70.6628 68.4428 70.6628 67.9677V35.3031C70.6628 35.0743 70.5714 34.8535 70.4106 34.6921C70.2489 34.531 70.0307 34.441 69.8029 34.441L61.9649 34.4413C61.4889 34.4413 61.1038 34.8277 61.1038 35.3031Z"
+                                  fill="#FFED01"/>
+                            <path d="M31.3764 37.5941C30.9007 37.5941 30.5161 37.9801 30.5161 38.4564V67.9681C30.5161 68.4432 30.9007 68.8242 31.3764 68.8242H39.2149C39.6904 68.8242 40.0746 68.4432 40.0746 67.9681V38.4564C40.0746 37.9804 39.6904 37.5941 39.2149 37.5941H31.3764Z"
+                                  fill="#FFED01"/>
+                            <path d="M16.0825 46.7738C15.6074 46.7738 15.2234 47.1545 15.2234 47.63V67.9677C15.2234 68.4428 15.6074 68.8238 16.0825 68.8238H23.9207C24.3958 68.8238 24.7804 68.4428 24.7804 67.9677V47.63C24.7804 47.1545 24.3958 46.7738 23.9207 46.7738H16.0825Z"
+                                  fill="#FFED01"/>
+                            <path d="M17.9864 43.8816C18.2131 44.1479 18.5374 44.2873 18.8628 44.2873C19.1248 44.2873 19.3894 44.1982 19.6029 44.0124L35.267 30.7709L49.0075 41.2814C49.4888 41.6527 50.1721 41.5818 50.5701 41.1214L63.2622 26.4754L65.04 28.0145C65.3493 28.2803 65.7803 28.3629 66.1661 28.2324C66.5527 28.0972 66.8399 27.7676 66.9184 27.3651L69.0365 16.3656C69.1132 15.9634 68.9706 15.5489 68.6625 15.279C68.3529 15.0129 67.9213 14.9303 67.5362 15.0608L56.9501 18.7256C56.5611 18.8618 56.2742 19.1914 56.1974 19.5939C56.1198 19.9964 56.2624 20.4086 56.5723 20.6752L58.3487 22.2193L48.9554 33.0615L35.7956 22.9926C35.3679 22.6657 34.769 22.6792 34.3582 23.0311L15.4077 39.0484C15.1739 39.248 15.0284 39.5252 15.0037 39.8301C14.9793 40.1344 15.0766 40.4364 15.2715 40.6695L17.9864 43.8816Z"
+                                  fill="#FFED01"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="rectangle"></div>
+                <div class="multiplication-item-block properties-block wow animate__fadeInUp" data-wow-delay="2s">
+                    <div class="multiplication-item-title">
+                        <div class="multiplication-item-title-number">
+                            3
+                        </div>
+                        <div class="multiplication-item-title-text">
+                            Рост прибыли
+                        </div>
+                    </div>
+                    <div class="multiplication-item-text">
+                        Ежедневно в вашем личном кабинете будут начисляться проценты от вашего вклада. Сумма прибыли
+                        рассчитывается исходя из доходности наших инструментов.
+                    </div>
+                </div>
+            </div>
+            <div class="multiplication-item">
+                <div class="multiplication-item-image">
+                    <svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M64.0649 48.7577L57.9701 56.7279C56.7505 58.3226 54.8577 59.258 52.8502 59.258H41.5332C40.6433 59.258 39.9219 58.5366 39.9219 57.6467C39.9219 56.7568 40.6433 56.0354 41.5332 56.0354H51.3418C53.45 56.0354 55.2155 54.3101 55.1752 52.2022C55.1361 50.1596 53.468 48.5158 51.4161 48.5158H40.1367C36.8983 45.402 31.9008 45.0376 28.2449 47.6489L27.0312 48.5158V66.7776H37.7735H39.9219H55.0538C58.3435 66.7776 61.4074 65.1048 63.1863 62.3376L69.4747 52.5556C69.8177 52.0221 70 51.4013 70 50.767C70.0001 47.6038 65.9863 46.245 64.0649 48.7577Z"
+                                  fill="#FFED01"/>
+                            <path d="M22.1973 45.293H16.6113C15.7214 45.293 15 46.0144 15 46.9043V68.3887C15 69.2786 15.7214 70 16.6113 70H22.1973C23.0872 70 23.8086 69.2786 23.8086 68.3887V46.9043C23.8086 46.0144 23.0872 45.293 22.1973 45.293Z"
+                                  fill="#FFED01"/>
+                            <path d="M45.7558 23.9058C45.428 24.1571 45.2473 24.5377 45.1852 24.8678C45.0994 25.3232 45.208 25.7462 45.462 25.9454C45.5515 26.0155 45.6501 26.0845 45.7558 26.1523V23.9058Z"
+                                  fill="#FFED01"/>
+                            <path d="M46.9043 41.8555C54.3084 41.8555 60.3321 35.8318 60.3321 28.4278C60.3321 21.0237 54.3084 15 46.9043 15C39.5003 15 33.4766 21.0237 33.4766 28.4278C33.4766 35.8318 39.5003 41.8555 46.9043 41.8555ZM42.8396 32.818C43.1642 32.3217 43.8301 32.1821 44.3266 32.5071C44.9068 32.8866 45.2704 33.0512 45.756 33.1194V28.5829C45.0699 28.2685 44.557 27.9658 44.1363 27.6357C43.2448 26.9365 42.8378 25.7235 43.074 24.4698C43.3314 23.1036 44.2824 22.0166 45.5556 21.6331C45.6231 21.6128 45.6898 21.5942 45.756 21.5767V20.9082C45.756 20.315 46.237 19.834 46.8302 19.834C47.4234 19.834 47.9044 20.315 47.9044 20.9082V21.459C48.9474 21.6395 49.6845 22.153 50.0416 22.5628C50.4313 23.0101 50.3845 23.6887 49.9372 24.0783C49.4922 24.4659 48.8186 24.4219 48.4278 23.9811C48.4033 23.9563 48.2326 23.792 47.9044 23.6709V27.1419C48.0951 27.2127 48.2857 27.2814 48.4727 27.3475C50.361 28.015 51.4112 29.763 51.0862 31.6972C50.8334 33.2005 49.6893 34.7252 47.9044 35.1779V35.9473C47.9044 36.5405 47.4234 37.0215 46.8302 37.0215C46.237 37.0215 45.756 36.5405 45.756 35.9473V35.2811C44.8887 35.2061 44.1697 34.9718 43.1505 34.305C42.654 33.9802 42.5148 33.3145 42.8396 32.818Z"
+                                  fill="#FFED01"/>
+                            <path d="M48.9673 31.3412C49.0379 30.9213 49.0668 29.9207 47.9043 29.4312V32.8817C48.5085 32.5355 48.8695 31.9235 48.9673 31.3412Z"
+                                  fill="#FFED01"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="rectangle"></div>
+                <div class="multiplication-item-block properties-block wow animate__fadeInUp" data-wow-delay="3s">
+                    <div class="multiplication-item-title">
+                        <div class="multiplication-item-title-number">
+                            4
+                        </div>
+                        <div class="multiplication-item-title-text">
+                            Вывод
+                        </div>
+                    </div>
+                    <div class="multiplication-item-text">
+                        Вывод доступен 24/7. Ваши средства постоянно находятся в работе, но остаются доступны для вывода.
+                        Возврат средств занимает не более 24 часов. Этого времени достаточно, чтобы успеть вывести ваш
+                        депозит с торговых площадок и отправить его вам.
+                    </div>
+                </div>
+            </div>
+            <div id="multiplication-items-men">
+                <img src="images/men.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="profit">
+    <div id="profit-container">
+        <div class="question properties-block wow animate__fadeIn">
+            <div class="question-image">
+                <img src="images/dollar.png" alt="">
+            </div>
+            <div class="question-title">
+                Как распределяется <br>
+                <span>ПРИБЫЛЬ</span>
+            </div>
+        </div>
+        <div id="profit-statistic">
+            <div id="profit-statistic-img">
+                <img src="images/profit-bg.png" alt="">
+                <div class="profit-statistic-item">
+                    <div class="profit-statistic-item-block">
+                        <div class="profit-statistic-item-title">
+                            50<span>%</span>
+                        </div>
+                        <div class="profit-statistic-item-text">
+                            доходность инвестора
+                        </div>
+                        <div class="profit-statistic-item-img">
+                            <img src="images/profit1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-statistic-item">
+                    <div class="profit-statistic-item-block">
+                        <div class="profit-statistic-item-title">
+                            25<span>%</span>
+                        </div>
+                        <div class="profit-statistic-item-text">
+                            наша доходность
+                        </div>
+                        <div class="profit-statistic-item-img">
+                            <img src="images/profit2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="profit-statistic-item">
+                    <div class="profit-statistic-item-block">
+                        <div class="profit-statistic-item-title">
+                            25<span>%</span>
+                        </div>
+                        <div class="profit-statistic-item-text">
+                            партнерская программа
+                        </div>
+                        <div class="profit-statistic-item-img">
+                            <img src="images/profit3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="profit-action">
+            <button class="yellow">Инвестировать</button>
+        </div>
+    </div>
+</div>
+
+<div id="statistic">
+    <div id="statistic-container">
+        <div class="question properties-block wow animate__fadeIn">
+            <div class="question-image">
+                <img src="images/dollar.png" alt="">
+            </div>
+            <div class="question-title">
+                Статистика <br>
+                <span>проекта arga capital</span>
+            </div>
+        </div>
+        <div id="statistic-items">
+            <div class="statistic-item">
+                <div class="statistic-item-number">
+                    15 341 <span>$</span>
+                </div>
+                <div class="statistic-item-text">
+                    Сумма депозитов
+                </div>
+            </div>
+            <div class="statistic-item">
+                <div class="statistic-item-number">
+                    10 341 <span>$</span>
+                </div>
+                <div class="statistic-item-text">
+                    Сумма выплат
+                </div>
+            </div>
+            <div class="statistic-item">
+                <div class="statistic-item-number">
+                    103
+                </div>
+                <div class="statistic-item-text">
+                    Кол-во инвесторов
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="footer-container">
+        <div id="footer-menu">
+            <div class="logo">
+                <a href="#header">
+                    <img src="images/Logotype.png" alt="">
+                </a>
+            </div>
+            <div class="link">
+                <div class="link-item">
+                    <a href="#">Что это?</a>
+                </div>
+                <div class="link-item">
+                    <a href="#">Наши продукты</a>
+                </div>
+                <div class="link-item">
+                    <a href="#">Отличие от других</a>
+                </div>
+                <div class="link-item">
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="link-item">
+                    <a href="#">Партнерская программа</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer-text">
+            © 2015 - 2020 ARGA Capital
+        </div>
+    </div>
+</div>
 
 <script src="bower_components/chartist/dist/chartist.min.js"></script>
-<script src="main.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

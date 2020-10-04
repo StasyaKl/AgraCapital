@@ -8,7 +8,7 @@
 <path d="M18.6717 24.127C16.701 24.127 15.1035 25.7244 15.1035 27.6951C15.1035 29.6657 16.701 31.2633 18.6717 31.2633H21.4515L27.1609 24.127H18.6717Z" fill="#FFED01"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0.103516" y="0.919434" width="90.8965" height="88.162" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="0.103516" y="0.919434" width="90.8965" height="88.162">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset/>
